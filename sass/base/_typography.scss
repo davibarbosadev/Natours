@@ -1,0 +1,26 @@
+@use "../tokens/colors";
+
+.heading {
+    text-transform: uppercase;
+
+    &--primary {
+        font-size: 5.6rem;
+        letter-spacing: 0.8rem;
+        word-spacing: 1.6rem;
+        line-height: 1;
+        color: colors.$text-color-light;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+    }
+
+    &--subtitle {
+        font-size: 3.2rem;
+        letter-spacing: 0.4rem;
+        word-spacing: 0.8rem;
+        color: colors.$text-color-light;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        margin-bottom: 3.2rem;
+    }
+}
