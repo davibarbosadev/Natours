@@ -1,0 +1,58 @@
+@use "../tokens/sizes";
+@use "../tokens/spacing";
+@use "../abstracts/mixins";
+
+.grid {
+    max-width: sizes.$grid-width;
+    margin: 0 auto;
+    padding: 3.2rem;
+}
+
+.row {
+    @include mixins.clearfix;
+    background-color: lightblue;
+
+    &:not(:last-child) {
+        margin-bottom: spacing.$gutter-vertical;
+    }
+
+    [class^="col-"] {
+        float: left;
+        background-color: lightcoral;
+
+        &:not(:last-child) {
+            margin-right: spacing.$gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{spacing.$gutter-horizontal}) / 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - (#{spacing.$gutter-horizontal} * 2)) / 3);
+    }
+
+    .col-2-of-3 {
+        width: calc(
+            (((100% - (#{spacing.$gutter-horizontal} * 2)) / 3) * 2) + #{spacing.$gutter-horizontal}
+        );
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - (#{spacing.$gutter-horizontal} * 3)) / 4);
+    }
+
+    .col-2-of-4 {
+        width: calc(
+            (((100% - (#{spacing.$gutter-horizontal} * 3)) / 4) * 2) + spacing.$gutter-horizontal
+        );
+    }
+
+    .col-3-of-4 {
+        width: calc(
+            (((100% - (#{spacing.$gutter-horizontal} * 3)) / 4) * 3) +
+                (spacing.$gutter-horizontal * 2)
+        );
+    }
+}
