@@ -1,9 +1,16 @@
-.button {
+@use "../tokens/colors";
+@use "../tokens/typography.scss";
+
+.button-primary {
     position: relative;
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: typography.$default-font-size;
     text-decoration: none;
     transition: all 0.3s ease;
+
+    padding: 1.2rem 3.6rem;
+    text-transform: uppercase;
+    border-radius: 100px;
 
     &:hover {
         transform: translateY(-0.4rem);
@@ -15,25 +22,14 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
     }
 
-    &--solid {
-        padding: 12px 36px;
-        text-transform: uppercase;
-        border-radius: 100px;
-    }
-
     &--white {
         color: #868e96;
-        background-color: #fff;
+        background-color: colors.$background-color-light;
     }
 
     &--green {
-        background-color: green;
-        color: white;
-    }
-
-    &--animated {
-        animation: moveInBottom 1s ease 0.75s;
-        animation-fill-mode: backwards;
+        background-color: colors.$color-primary;
+        color: colors.$text-color-light;
     }
 
     &--effect-expand {
@@ -54,4 +50,29 @@
             opacity: 0;
         }
     }
+}
+
+.button-secondary {
+    width: max-content;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: colors.$color-primary;
+    font-size: typography.$default-font-size;
+    font-weight: 500;
+    border-bottom: 2px solid colors.$color-primary;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #fff;
+        background-color: colors.$color-primary;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.125);
+        transform: translateY(-0.2rem);
+    }
+}
+
+.button-hero {
+    animation: moveInBottom 1s ease 0.75s;
+    animation-fill-mode: backwards;
 }

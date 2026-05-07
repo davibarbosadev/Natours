@@ -1,0 +1,41 @@
+@use "../tokens/colors";
+
+.composition {
+    position: relative;
+
+    &__photo {
+        width: 55%;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.125);
+        border-radius: 0.4rem;
+        position: absolute;
+        z-index: 10;
+        transition: all 0.3s ease;
+        outline-offset: 0.8rem;
+
+        &--1 {
+            left: 0;
+            top: -2rem;
+        }
+
+        &--2 {
+            right: 0;
+            top: 2rem;
+        }
+
+        &--3 {
+            left: 20%;
+            top: 10rem;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.275);
+            z-index: 15;
+            outline: 0.8rem solid colors.$color-primary;
+        }
+
+        &:not(:hover) {
+            transform: scale(.9);
+        }
+    }
+}

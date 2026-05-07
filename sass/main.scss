@@ -2,15 +2,19 @@
 @use "base/base";
 @use "base/typography";
 
+@use "animations/keyframes.scss";
+
 @use "components/hero";
 @use "components/header";
 @use "components/buttons";
+@use "components/composition";
 
-@use "animations/keyframes.scss";
 
 @use "layout/grid";
+@use "layout/section";
 
 
+@use "pages/home"
 
 
 
