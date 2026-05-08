@@ -1,12 +1,12 @@
+@use "../abstracts/extends";
 @use "../tokens/colors";
 @use "../tokens/typography.scss";
 
 .button-primary {
+    @extend %button-base;
+
     position: relative;
     display: inline-block;
-    font-size: typography.$default-font-size;
-    text-decoration: none;
-    transition: all 0.3s ease;
 
     padding: 1.2rem 3.6rem;
     text-transform: uppercase;
@@ -53,16 +53,15 @@
 }
 
 .button-secondary {
+    @extend %button-base;
+
     width: max-content;
     padding: 0 0.4rem;
     display: flex;
     align-items: center;
-    text-decoration: none;
     color: colors.$color-primary;
-    font-size: typography.$default-font-size;
     font-weight: 500;
     border-bottom: 2px solid colors.$color-primary;
-    transition: all 0.3s ease;
 
     &:hover {
         color: #fff;
