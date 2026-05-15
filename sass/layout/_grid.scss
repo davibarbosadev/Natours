@@ -4,14 +4,15 @@
 
 .grid {
     max-width: sizes.$grid-width;
-    margin: 0 auto;
     padding: 3.2rem;
 }
 
 .row {
     @include mixins.clearfix;
+    max-width: sizes.$grid-width;
+    margin: 0 auto;
 
-    &:not(:last-child) {
+    &:not(:last-of-type) {
         margin-bottom: spacing.$gutter-vertical;
     }
 
