@@ -4,7 +4,6 @@
 .tour-card {
     position: relative;
     perspective: 150rem;
-    height: 37.5rem;
     height: 42.2rem;
 
     &__side {
@@ -17,7 +16,7 @@
         border-radius: 0.8rem;
         box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
         overflow: hidden;
-        transition: all 0.8s ease;
+        transition: transform 0.8s ease;
 
         &--front {
             background-color: #fff;
@@ -146,14 +145,12 @@
     }
 
     &__details {
-        padding: 2.4rem 2.4rem 1.2rem;
         padding: 2.4rem 3.2rem 1.2rem;
         text-align: center;
 
         li {
             padding: 1.2rem;
-            font-size: typography.$small-font-size;
-            font-size: 1.2rem;
+            font-size: typography.$extra-small-font-size;
 
             &:not(:last-child) {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.125);
