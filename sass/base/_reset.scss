@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -6,6 +10,19 @@
     box-sizing: inherit;
 }
 
-ol, ul {
+button {
+    border: none;
+}
+
+ol,
+ul {
     list-style: none;
+}
+
+input {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
 }

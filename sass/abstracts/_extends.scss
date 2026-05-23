@@ -1,6 +1,7 @@
 @use "../tokens/typography.scss";
 
 %button-base {
+    width: max-content;
     font-size: typography.$default-font-size;
     text-decoration: none;
     transition: all 0.3s ease;
