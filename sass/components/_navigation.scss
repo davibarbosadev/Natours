@@ -1,0 +1,118 @@
+@use "../tokens/colors";
+
+.navigation__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 3.4rem;
+    right: 4.8rem;
+    z-index: 99999; // acima do nav
+
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.225);
+    cursor: pointer;
+
+    &-icon {
+        position: absolute;
+
+        width: 4rem;
+        height: 4rem;
+
+        stroke-width: 1.5;
+        transition:
+            opacity 0s ease,
+            transform 0.3s ease;
+
+        &--hamburger {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+
+        &--close {
+            opacity: 0;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &.open {
+        .navigation__toggle-icon {
+            &--hamburger {
+                opacity: 0;
+                transform: rotate(45deg);
+            }
+
+            &--close {
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+.navigation {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: grid;
+    place-items: center;
+
+    background-image: radial-gradient(colors.$color-primary-light, colors.$color-primary-dark);
+
+    // começa como um círculo pequeno na posição do botão
+    clip-path: circle(2.7rem at calc(100% - 7.6rem) 6.2rem);
+    transition: clip-path 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    &.open {
+        clip-path: circle(200% at calc(100% - 7.6rem) 6.2rem);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+        list-style: none;
+
+        transform: translateX(24rem);
+
+        opacity: 0;
+        pointer-events: none;
+        transition:
+            opacity 0.2s,
+            transform 0.3s ease-in-out;
+
+        .open & {
+            transform: translateX(0);
+            opacity: 1;
+            pointer-events: auto;
+            transition-delay: 0.5s; // aparece depois da expansão
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 0 2.4rem;
+        font-size: 3.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: colors.$text-color-light;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+        background-size: 300%;
+
+        transition:
+            color 0.3s ease,
+            background-position 0.7s ease,
+            transform 0.3s ease;
+
+        &:hover {
+            transform: translateX(1rem);
+            background-position: 100%;
+            color: colors.$color-primary;
+        }
+    }
+}

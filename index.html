@@ -18,12 +18,71 @@
     </head>
 
     <body>
+        <div class="navigation-wrapper">
+            <button class="navigation__toggle">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="navigation__toggle-icon navigation__toggle-icon--hamburger"
+                >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="navigation__toggle-icon navigation__toggle-icon--close"
+                >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </button>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">sobre natours</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">seus benefícios</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">passeios populares</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">depoimentos</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">reserve já</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <section class="section section--hero hero">
             <header class="header">
                 <img class="header__logo" src="img/logo-white.png" alt="Logo" />
-                <nav class="navigation">
-                    <button>nav</button>
-                </nav>
             </header>
 
             <div class="hero__text-box">
@@ -500,5 +559,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/navigation.js"></script>
     </body>
 </html>
