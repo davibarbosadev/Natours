@@ -31,7 +31,7 @@
             transform: scale(1.2);
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.275);
             z-index: 15;
-            outline: 0.8rem solid colors.$color-primary;
+            outline: 0.8rem solid colors.$color-brand-primary;
         }
 
         &:not(:hover) {

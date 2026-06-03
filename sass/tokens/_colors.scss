@@ -1,16 +1,60 @@
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+// ─────────────────────────────────────────────
+// Natours — Color Tokens
+// ─────────────────────────────────────────────
 
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+// ─── brand / green ───────────────────────────
+$color-brand-300: #7ed56f; // $color-primary-light
+$color-brand-500: #55c57a; // $color-primary
+$color-brand-700: #28b485; // $color-primary-dark
 
-$text-color-body: #868e96;
-$text-color-light: #f8f9fa;
-$text-color-placeholder: #adb5bd;
+// ─── accent-a / warm ─────────────────────────
+$color-accent-a-300: #ffb900; // $color-secondary-light
+$color-accent-a-500: #ff9818; // $color-secondary
+$color-accent-a-700: #ff7730; // $color-secondary-dark
 
-$background-color-light: #f1f3f5;
-$background-color-dark: #212529;
+// ─── accent-b / cool ─────────────────────────
+$color-accent-b-300: #2998ff; // $color-tertiary-light
+$color-accent-b-500: #406efd; // $color-tertiary
+$color-accent-b-700: #5643fa; // $color-tertiary-dark
+
+// ─── text ─────────────────────────────────────
+$color-text-300: #f8f9fa; // $text-color-light (on dark)
+$color-text-500: #adb5bd; // $text-color-placeholder
+$color-text-700: #868e96; // $text-color-body
+
+// ─── surface ──────────────────────────────────
+$color-surface-100: #f1f3f5; // $background-color-light
+$color-surface-500: #868e96; // calculado (mid neutro)
+$color-surface-900: #212529; // $background-color-dark
+
+
+// ─────────────────────────────────────────────
+// Aliases semânticos
+// ─────────────────────────────────────────────
+
+// brand
+$color-brand-primary-light: $color-brand-300;
+$color-brand-primary:       $color-brand-500;
+$color-brand-primary-dark:  $color-brand-700;
+
+// accent A — warnings, highlights quentes
+$color-accent-a-light:       $color-accent-a-300;
+$color-accent-a-mid:   $color-accent-a-500;
+$color-accent-a-dark:  $color-accent-a-700;
+
+// accent B — info, CTAs secundários
+$color-accent-b-light:       $color-accent-b-300;
+$color-accent-b-mid:   $color-accent-b-500;
+$color-accent-b-dark:  $color-accent-b-700;
+
+// text
+$color-text-light:   $color-text-300;
+$color-text-placeholder:    $color-text-500;
+$color-text-body: $color-text-700;
+
+// surface
+$color-surface-light: $color-surface-100;
+$color-surface-mid:   $color-surface-500;
+$color-surface-dark:  $color-surface-900;
+

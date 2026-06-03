@@ -2,7 +2,7 @@
 
 .footer {
     padding: 6.4rem;
-    background-color: colors.$background-color-dark;
+    background-color: colors.$color-surface-dark;
 
     &-container {
         display: flex;
@@ -30,15 +30,14 @@
     &__navigation {
         display: flex;
         flex-wrap: wrap;
-        gap: 2.4rem;
-        justify-content: space-between;
+        gap: 1.6rem;
     }
 
     &__link {
         display: inline-block;
         font-size: 1.4rem;
         text-transform: uppercase;
-        color: colors.$text-color-light;
+        color: colors.$color-text-light;
         transition: box-shadow, transform .3s ease;
 
         &:is(:hover, :active) {

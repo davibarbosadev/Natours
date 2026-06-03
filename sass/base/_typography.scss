@@ -9,7 +9,7 @@
         letter-spacing: 0.8rem;
         word-spacing: 1.6rem;
         line-height: 1;
-        color: colors.$text-color-light;
+        color: colors.$color-text-light;
         animation: moveInLeft 1s ease;
     }
 
@@ -20,8 +20,8 @@
         color: transparent;
         background-image: linear-gradient(
             to right,
-            colors.$color-primary-light,
-            colors.$color-primary-dark
+            colors.$color-brand-primary-light,
+            colors.$color-brand-primary-dark
         );
         background-clip: text;
         transition: all 0.3s ease;
@@ -41,9 +41,8 @@
         font-size: 3.2rem;
         letter-spacing: 0.4rem;
         word-spacing: 0.8rem;
-        color: colors.$text-color-light;
+        color: colors.$color-text-light;
         animation: moveInRight 1s ease;
-        margin-bottom: 3.2rem;
     }
 }
 

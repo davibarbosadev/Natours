@@ -86,10 +86,10 @@
         align-items: center;
         justify-content: center;
         
-        color: colors.$text-color-placeholder;
+        color: colors.$color-text-placeholder;
 
         &:hover {
-            color: colors.$color-primary;
+            color: colors.$color-brand-primary;
         }
 
     }

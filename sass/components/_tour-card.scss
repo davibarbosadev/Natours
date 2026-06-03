@@ -2,6 +2,7 @@
 @use "../tokens/typography";
 
 .tour-card {
+    flex: 1;
     position: relative;
     perspective: 150rem;
     height: 42.2rem;
@@ -28,24 +29,24 @@
             &-1 {
                 background-image: linear-gradient(
                     to right bottom,
-                    colors.$color-secondary-light,
-                    colors.$color-secondary-dark
+                    colors.$color-accent-a-light,
+                    colors.$color-accent-a-dark
                 );
             }
 
             &-2 {
                 background-image: linear-gradient(
                     to right bottom,
-                    colors.$color-primary-light,
-                    colors.$color-primary-dark
+                    colors.$color-brand-primary-light,
+                    colors.$color-brand-primary-dark
                 );
             }
 
             &-3 {
                 background-image: linear-gradient(
                     to right bottom,
-                    colors.$color-tertiary-light,
-                    colors.$color-tertiary-dark
+                    colors.$color-accent-b-light,
+                    colors.$color-accent-b-dark
                 );
             }
         }
@@ -69,8 +70,8 @@
             background-image:
                 linear-gradient(
                     to right bottom,
-                    colors.$color-secondary-light,
-                    colors.$color-secondary-dark
+                    colors.$color-accent-a-light,
+                    colors.$color-accent-a-dark
                 ),
                 url(../img/nat-5.jpg);
         }
@@ -79,8 +80,8 @@
             background-image:
                 linear-gradient(
                     to right bottom,
-                    colors.$color-primary-light,
-                    colors.$color-primary-dark
+                    colors.$color-brand-primary-light,
+                    colors.$color-brand-primary-dark
                 ),
                 url(../img/nat-6.jpg);
         }
@@ -89,8 +90,8 @@
             background-image:
                 linear-gradient(
                     to right bottom,
-                    colors.$color-tertiary-light,
-                    colors.$color-tertiary-dark
+                    colors.$color-accent-b-light,
+                    colors.$color-accent-b-dark
                 ),
                 url(../img/nat-7.jpg);
         }
@@ -117,8 +118,8 @@
             span {
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(colors.$color-secondary-light, 0.85),
-                    rgba(colors.$color-secondary-dark, 0.85)
+                    rgba(colors.$color-accent-a-light, 0.85),
+                    rgba(colors.$color-accent-a-dark, 0.85)
                 );
             }
         }
@@ -127,8 +128,8 @@
             span {
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(colors.$color-primary-light, 0.85),
-                    rgba(colors.$color-primary-dark, 0.85)
+                    rgba(colors.$color-brand-primary-light, 0.85),
+                    rgba(colors.$color-brand-primary-dark, 0.85)
                 );
             }
         }
@@ -137,8 +138,8 @@
             span {
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(colors.$color-tertiary-light, 0.85),
-                    rgba(colors.$color-tertiary-dark, 0.85)
+                    rgba(colors.$color-accent-b-light, 0.85),
+                    rgba(colors.$color-accent-b-dark, 0.85)
                 );
             }
         }
@@ -164,7 +165,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: colors.$text-color-light;
+        color: colors.$color-text-light;
         text-align: center;
     }
 

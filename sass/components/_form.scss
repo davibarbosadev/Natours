@@ -23,7 +23,7 @@
         transition: border-color 0.3s ease;
 
         &::placeholder {
-            color: colors.$text-color-placeholder;
+            color: colors.$color-text-placeholder;
         }
 
         &:focus {
@@ -32,7 +32,7 @@
             }
 
             &:valid {
-                border-color: colors.$color-primary;
+                border-color: colors.$color-brand-primary;
             }
         }
     }
@@ -73,7 +73,7 @@
         justify-content: center;
         width: 2.4rem;
         height: 2.4rem;
-        border: 3px solid colors.$color-primary;
+        border: 3px solid colors.$color-brand-primary;
         border-radius: 50%;
 
         &::before {
@@ -81,7 +81,7 @@
             width: 1.2rem;
             height: 1.2rem;
             border-radius: 50%;
-            background-color: colors.$color-primary;
+            background-color: colors.$color-brand-primary;
             opacity: 0;
             transition: opacity 0.3s ease;
         }

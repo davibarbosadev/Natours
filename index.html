@@ -80,19 +80,19 @@
             </nav>
         </div>
 
-        <section class="section section--hero hero">
-            <header class="header">
-                <img class="header__logo" src="img/logo-white.png" alt="Logo" />
+        <section class="section hero">
+            <header class="hero__header">
+                <img class="logo" src="img/logo-white.png" alt="Logo" />
             </header>
 
-            <div class="hero__text-box">
-                <h1 class="heading heading--primary">ao ar livre</h1>
+            <div class="hero__content">
+                <div class="hero__heading">
+                    <h1 class="heading heading--primary">ao ar livre</h1>
 
-                <p class="heading heading--subtitle">é onde a vida acontece</p>
+                    <p class="heading heading--subtitle">é onde a vida acontece</p>
+                </div>
 
-                <a
-                    href="#"
-                    class="button-primary button-primary--white button-primary--effect-expand button-hero"
+                <a href="#" class="btn btn--pill btn--secondary btn--effect-expand btn--hero"
                     >descubra nossos passeios</a
                 >
             </div>
@@ -104,8 +104,8 @@
                     <h2 class="heading heading--secondary">passeios para pessoas aventureiras</h2>
                 </header>
 
-                <div class="row">
-                    <div class="col-1-of-2">
+                <div class="about">
+                    <div class="about__content">
                         <h3 class="heading heading--tertiary">
                             você vai se apaixonar pela a natureza
                         </h3>
@@ -124,9 +124,10 @@
                             aventura, emoção e momentos inesquecíveis na natureza.
                         </p>
 
-                        <a href="#" class="button-secondary">Saiba mais &rarr;</a>
+                        <a href="#section-tours" class="btn btn--tertiary">Saiba mais &rarr;</a>
                     </div>
-                    <div class="col-1-of-2">
+
+                    <div class="about__composition">
                         <div class="composition">
                             <img
                                 src="img/nat-1-large.jpg"
@@ -149,243 +150,221 @@
             </section>
 
             <section class="section section--features">
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <article class="feature">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feature__icon"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M8 16l2 -6l6 -2l-2 6l-6 2" />
-                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                                <path d="M12 3l0 2" />
-                                <path d="M12 19l0 2" />
-                                <path d="M3 12l2 0" />
-                                <path d="M19 12l2 0" />
-                            </svg>
-                            <h3 class="heading heading--tertiary">explore um mundo novo</h3>
-                            <p class="feature__description">
-                                Descubra destinos incríveis e viva experiências que mudará sua vida.
-                            </p>
-                        </article>
-                    </div>
+                <div class="features">
+                    <article class="feature">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feature__icon"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8 16l2 -6l6 -2l-2 6l-6 2" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M12 3l0 2" />
+                            <path d="M12 19l0 2" />
+                            <path d="M3 12l2 0" />
+                            <path d="M19 12l2 0" />
+                        </svg>
+                        <h3 class="heading heading--tertiary">explore um mundo novo</h3>
+                        <p class="feature__description">
+                            Descubra destinos incríveis e viva experiências que mudará sua vida.
+                        </p>
+                    </article>
 
-                    <div class="col-1-of-4">
-                        <article class="feature">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feature__icon"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
-                                <path d="M3.6 9h16.8" />
-                                <path d="M3.6 15h16.8" />
-                                <path d="M11.5 3a17 17 0 0 0 0 18" />
-                                <path d="M12.5 3a17 17 0 0 1 0 18" />
-                            </svg>
-                            <h3 class="heading heading--tertiary">conheça a natureza</h3>
-                            <p class="feature__description">
-                                Conecte-se com paisagens naturais e aproveite momentos inesquecíveis
-                                ao ar livre.
-                            </p>
-                        </article>
-                    </div>
+                    <article class="feature">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feature__icon"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M3.6 9h16.8" />
+                            <path d="M3.6 15h16.8" />
+                            <path d="M11.5 3a17 17 0 0 0 0 18" />
+                            <path d="M12.5 3a17 17 0 0 1 0 18" />
+                        </svg>
+                        <h3 class="heading heading--tertiary">conheça a natureza</h3>
+                        <p class="feature__description">
+                            Conecte-se com paisagens naturais e aproveite momentos inesquecíveis ao
+                            ar livre.
+                        </p>
+                    </article>
 
-                    <div class="col-1-of-4">
-                        <article class="feature">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feature__icon"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" />
-                                <path d="M9 4v13" />
-                                <path d="M15 7v13" />
-                            </svg>
-                            <h3 class="heading heading--tertiary">encontre o caminho</h3>
-                            <p class="feature__description">
-                                Explore trilhas, mapas e roteiros planejados para ajudar você a
-                                encontrar sua próxima aventura.
-                            </p>
-                        </article>
-                    </div>
+                    <article class="feature">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feature__icon"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" />
+                            <path d="M9 4v13" />
+                            <path d="M15 7v13" />
+                        </svg>
+                        <h3 class="heading heading--tertiary">encontre o caminho</h3>
+                        <p class="feature__description">
+                            Explore trilhas, mapas e roteiros planejados para ajudar você a
+                            encontrar sua próxima aventura.
+                        </p>
+                    </article>
 
-                    <div class="col-1-of-4">
-                        <article class="feature">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feature__icon"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
-                                />
-                            </svg>
-                            <h3 class="heading heading--tertiary">viva com intensidade</h3>
-                            <p class="feature__description">
-                                Crie memórias especiais, conheça novas culturas e aproveite cada
-                                jornada ao máximo.
-                            </p>
-                        </article>
-                    </div>
+                    <article class="feature">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feature__icon"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                            />
+                        </svg>
+                        <h3 class="heading heading--tertiary">viva com intensidade</h3>
+                        <p class="feature__description">
+                            Crie memórias especiais, conheça novas culturas e aproveite cada jornada
+                            ao máximo.
+                        </p>
+                    </article>
                 </div>
             </section>
 
-            <section id="section--tours" class="section section--tours">
+            <section id="section-tours" class="section section--tours">
                 <header class="section__header">
-                    <h2 class="heading heading--secondary">passeios para pessoas aventureiras</h2>
+                    <h2 class="heading heading--secondary">passeios populares</h2>
                 </header>
 
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <article class="tour-card">
-                            <div class="tour-card__side tour-card__side--front">
-                                <div class="tour-card__hero tour-card__hero--1"></div>
+                <div class="tours">
+                    <article class="tour-card">
+                        <div class="tour-card__side tour-card__side--front">
+                            <div class="tour-card__hero tour-card__hero--1"></div>
 
-                                <h3 class="tour-card__title tour-card__title--1">
-                                    <span>o explorador do mar</span>
-                                </h3>
+                            <h3 class="tour-card__title tour-card__title--1">
+                                <span>o explorador do mar</span>
+                            </h3>
 
-                                <ul class="tour-card__details">
-                                    <li>Excursão de 3 dias</li>
-                                    <li>Até 30 pessoas</li>
-                                    <li>2 guias turísticos</li>
-                                    <li>Durma em hotéis aconchegantes</li>
-                                    <li>Dificuldade: fácil</li>
-                                </ul>
-                            </div>
+                            <ul class="tour-card__details">
+                                <li>Excursão de 3 dias</li>
+                                <li>Até 30 pessoas</li>
+                                <li>2 guias turísticos</li>
+                                <li>Durma em hotéis aconchegantes</li>
+                                <li>Dificuldade: fácil</li>
+                            </ul>
+                        </div>
 
-                            <div
-                                class="tour-card__side tour-card__side--back tour-card__side--back-1"
-                            >
-                                <div class="tour-card__cta">
-                                    <div class="tour-card__price">
-                                        <p class="tour-card__price-label">apenas</p>
-                                        <p class="tour-card__price-value">R$ 297,99</p>
-                                    </div>
-
-                                    <a
-                                        href="#overlay"
-                                        class="button-primary button-primary--white button-primary--effect-expand"
-                                        >reserve já</a
-                                    >
+                        <div class="tour-card__side tour-card__side--back tour-card__side--back-1">
+                            <div class="tour-card__cta">
+                                <div class="tour-card__price">
+                                    <p class="tour-card__price-label">apenas</p>
+                                    <p class="tour-card__price-value">R$ 297,99</p>
                                 </div>
+
+                                <a
+                                    href="#overlay"
+                                    class="btn btn--pill btn--secondary btn--effect-expand"
+                                    >reserve já</a
+                                >
                             </div>
-                        </article>
-                    </div>
+                        </div>
+                    </article>
 
-                    <div class="col-1-of-3">
-                        <article class="tour-card">
-                            <div class="tour-card__side tour-card__side--front">
-                                <div class="tour-card__hero tour-card__hero--2"></div>
+                    <article class="tour-card">
+                        <div class="tour-card__side tour-card__side--front">
+                            <div class="tour-card__hero tour-card__hero--2"></div>
 
-                                <h3 class="tour-card__title tour-card__title--2">
-                                    <span>o caminhante da floresta</span>
-                                </h3>
+                            <h3 class="tour-card__title tour-card__title--2">
+                                <span>o caminhante da floresta</span>
+                            </h3>
 
-                                <ul class="tour-card__details">
-                                    <li>Excursão de 7 dias</li>
-                                    <li>Até 40 pessoas</li>
-                                    <li>6 guias turísticos</li>
-                                    <li>Durma em tendas fornecidas</li>
-                                    <li>Dificuldade: média</li>
-                                </ul>
-                            </div>
+                            <ul class="tour-card__details">
+                                <li>Excursão de 7 dias</li>
+                                <li>Até 40 pessoas</li>
+                                <li>6 guias turísticos</li>
+                                <li>Durma em tendas fornecidas</li>
+                                <li>Dificuldade: média</li>
+                            </ul>
+                        </div>
 
-                            <div
-                                class="tour-card__side tour-card__side--back tour-card__side--back-2"
-                            >
-                                <div class="tour-card__cta">
-                                    <div class="tour-card__price">
-                                        <p class="tour-card__price-label">apenas</p>
-                                        <p class="tour-card__price-value">R$ 497,99</p>
-                                    </div>
-
-                                    <a
-                                        href="#overlay"
-                                        class="button-primary button-primary--white button-primary--effect-expand"
-                                        >reserve já</a
-                                    >
+                        <div class="tour-card__side tour-card__side--back tour-card__side--back-2">
+                            <div class="tour-card__cta">
+                                <div class="tour-card__price">
+                                    <p class="tour-card__price-label">apenas</p>
+                                    <p class="tour-card__price-value">R$ 497,99</p>
                                 </div>
+
+                                <a
+                                    href="#overlay"
+                                    class="btn btn--pill btn--secondary btn--effect-expand"
+                                    >reserve já</a
+                                >
                             </div>
-                        </article>
-                    </div>
+                        </div>
+                    </article>
 
-                    <div class="col-1-of-3">
-                        <article class="tour-card">
-                            <div class="tour-card__side tour-card__side--front">
-                                <div class="tour-card__hero tour-card__hero--3"></div>
+                    <article class="tour-card">
+                        <div class="tour-card__side tour-card__side--front">
+                            <div class="tour-card__hero tour-card__hero--3"></div>
 
-                                <h3 class="tour-card__title tour-card__title--3">
-                                    <span>o aventureiro da neve</span>
-                                </h3>
+                            <h3 class="tour-card__title tour-card__title--3">
+                                <span>o aventureiro da neve</span>
+                            </h3>
 
-                                <ul class="tour-card__details">
-                                    <li>Excursão de 5 dias</li>
-                                    <li>Até 15 pessoas</li>
-                                    <li>3 guias turísticos</li>
-                                    <li>Durma em hotéis aconchegantes</li>
-                                    <li>Dificuldade: difícil</li>
-                                </ul>
-                            </div>
+                            <ul class="tour-card__details">
+                                <li>Excursão de 5 dias</li>
+                                <li>Até 15 pessoas</li>
+                                <li>3 guias turísticos</li>
+                                <li>Durma em hotéis aconchegantes</li>
+                                <li>Dificuldade: difícil</li>
+                            </ul>
+                        </div>
 
-                            <div
-                                class="tour-card__side tour-card__side--back tour-card__side--back-3"
-                            >
-                                <div class="tour-card__cta">
-                                    <div class="tour-card__price">
-                                        <p class="tour-card__price-label">apenas</p>
-                                        <p class="tour-card__price-value">R$ 897,99</p>
-                                    </div>
-
-                                    <a
-                                        href="#overlay"
-                                        class="button-primary button-primary--white button-primary--effect-expand"
-                                        >reserve já</a
-                                    >
+                        <div class="tour-card__side tour-card__side--back tour-card__side--back-3">
+                            <div class="tour-card__cta">
+                                <div class="tour-card__price">
+                                    <p class="tour-card__price-label">apenas</p>
+                                    <p class="tour-card__price-value">R$ 897,99</p>
                                 </div>
+
+                                <a
+                                    href="#overlay"
+                                    class="btn btn--pill btn--secondary btn--effect-expand"
+                                    >reserve já</a
+                                >
                             </div>
-                        </article>
-                    </div>
+                        </div>
+                    </article>
                 </div>
 
                 <footer class="section__footer">
-                    <a
-                        href="#"
-                        class="button-primary button-primary--green button-primary--effect-expand"
+                    <a href="#overlay" class="btn btn--pill btn--primary btn--effect-expand"
                         >descubra todos os passeios</a
                     >
                 </footer>
@@ -409,7 +388,7 @@
                     </h2>
                 </header>
 
-                <div class="row">
+                <div class="testimonials">
                     <article class="testimonial-card">
                         <figure class="testimonial-card__profile">
                             <img src="img/nat-8.jpg" alt="Pessoa em um Passeio" />
@@ -429,9 +408,7 @@
                             </blockquote>
                         </div>
                     </article>
-                </div>
 
-                <div class="row">
                     <article class="testimonial-card">
                         <figure class="testimonial-card__profile">
                             <img src="img/nat-9.jpg" alt="Pessoa em um Passeio" />
@@ -454,15 +431,13 @@
                 </div>
 
                 <footer class="section__footer">
-                    <a href="#" class="button-secondary button-secondary--green"
-                        >Leia todos os depoimentos &rarr;</a
-                    >
+                    <a href="#" class="btn btn--tertiary">Leia todos os depoimentos &rarr;</a>
                 </footer>
             </section>
 
-            <section class="section section--book">
-                <div class="book">
-                    <div class="book__form">
+            <section class="section section--booking">
+                <div class="booking">
+                    <div class="booking__form">
                         <header class="section__header">
                             <h2 class="heading heading--secondary">reserve seu passeio</h2>
                         </header>
@@ -518,7 +493,7 @@
                             </div>
 
                             <button
-                                class="form__submit button-primary button-primary--green button-primary--effect-expand"
+                                class="form__submit btn btn--pill btn--primary btn--effect-expand"
                                 type="submit"
                             >
                                 próximo passo &rarr;
@@ -606,7 +581,9 @@
                         vitae accusamus similique ab dignissimos.
                     </p>
 
-                    <a href="#" class="button-primary button-primary--green button-primary--effect-expand">reserve agora</a>
+                    <a href="#" class="btn btn--pill btn--primary btn--effect-expand"
+                        >reserve agora</a
+                    >
                 </div>
             </div>
         </div>
