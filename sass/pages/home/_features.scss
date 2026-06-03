@@ -1,0 +1,29 @@
+@use "../../tokens/colors";
+
+.section--features {
+    margin-top: -9.6rem;
+
+    background-image:
+        linear-gradient(
+            120deg,
+            rgba(colors.$color-brand-primary-light, 0.8),
+            rgba(colors.$color-brand-primary-dark, 0.8)
+        ),
+        url(../img/nat-4.jpg);
+    background-size: cover;
+    background-position: top;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+.features {
+    display: flex;
+    gap: 3.2rem;
+
+    & > * {
+        flex: 1;
+    }
+}

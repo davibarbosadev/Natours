@@ -1,0 +1,40 @@
+@use "../../tokens/colors";
+
+.hero {
+    margin-top: 0;
+    padding: 0;
+
+    height: 95dvh;
+    background-image:
+        linear-gradient(
+            120deg,
+            rgba(colors.$color-brand-primary-light, 0.8),
+            rgba(colors.$color-brand-primary-dark, 0.8)
+        ),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75dvh, 0 95dvh);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6.4rem;
+        padding: 3.2rem;
+
+        .logo {
+            height: 3.2rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4.8rem;
+    }
+
+    &__heading {
+        text-align: center;
+    }
+}

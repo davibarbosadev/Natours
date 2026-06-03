@@ -61,7 +61,10 @@
     display: grid;
     place-items: center;
 
-    background-image: radial-gradient(colors.$color-primary-light, colors.$color-primary-dark);
+    background-image: radial-gradient(
+        colors.$color-brand-primary-light,
+        colors.$color-brand-primary-dark
+    );
 
     // começa como um círculo pequeno na posição do botão
     clip-path: circle(2.7rem at calc(100% - 7.6rem) 6.2rem);
@@ -100,7 +103,7 @@
         font-size: 3.2rem;
         font-weight: 300;
         text-transform: uppercase;
-        color: colors.$text-color-light;
+        color: colors.$color-text-light;
         background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
         background-size: 300%;
 
@@ -112,7 +115,7 @@
         &:hover {
             transform: translateX(1rem);
             background-position: 100%;
-            color: colors.$color-primary;
+            color: colors.$color-brand-primary-light;
         }
     }
 }

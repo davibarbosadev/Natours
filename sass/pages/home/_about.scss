@@ -1,0 +1,19 @@
+@use "../../tokens/colors";
+
+.section--about {
+    background-color: colors.$color-surface-light;
+    margin-top: -20dvh;
+}
+
+.about {
+    display: flex;
+    gap: 6.4rem;
+
+    &__content {
+        flex: 1;
+    }
+
+    &__composition {
+        flex: 1;
+    }
+}
