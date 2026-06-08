@@ -1,16 +1,14 @@
+@use "../abstracts/mixins";
+
 @use "../tokens/colors";
 
 .footer {
-    padding: 6.4rem;
+    padding: 4.8rem 2.4rem;
+    // padding: 6.4rem;
     background-color: colors.$color-surface-dark;
 
-    &-container {
-        display: flex;
-        gap: 9.6rem;
-
-        & > * {
-            flex: 1;
-        }
+    @include mixins.media-up(1024px) {
+        padding: 6.4rem;
     }
 
     &__logo-box {
@@ -22,9 +20,21 @@
         width: 15rem;
     }
 
-    &__side {
-        padding: 1.2rem 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.325);
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        @include mixins.media-up(768px) {
+            flex-direction: row;
+            gap: 6.4rem;
+        }
+
+        & > * {
+            flex: 1;
+            padding: 1.2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.325);
+        }
     }
 
     &__navigation {
@@ -38,7 +48,9 @@
         font-size: 1.4rem;
         text-transform: uppercase;
         color: colors.$color-text-light;
-        transition: box-shadow, transform .3s ease;
+        transition:
+            box-shadow,
+            transform 0.3s ease;
 
         &:is(:hover, :active) {
             color: green;
@@ -48,6 +60,7 @@
     }
 
     &__copyright {
+        font-size: 1.2rem;
         line-height: 1.5;
     }
 }

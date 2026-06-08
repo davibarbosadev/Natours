@@ -172,10 +172,13 @@
                             <path d="M3 12l2 0" />
                             <path d="M19 12l2 0" />
                         </svg>
-                        <h3 class="heading heading--tertiary">explore um mundo novo</h3>
-                        <p class="feature__description">
-                            Descubra destinos incríveis e viva experiências que mudará sua vida.
-                        </p>
+
+                        <div class="feature__content">
+                            <h3 class="heading heading--tertiary">explore um mundo novo</h3>
+                            <p class="feature__description">
+                                Descubra destinos incríveis e viva experiências que mudará sua vida.
+                            </p>
+                        </div>
                     </article>
 
                     <article class="feature">
@@ -198,11 +201,14 @@
                             <path d="M11.5 3a17 17 0 0 0 0 18" />
                             <path d="M12.5 3a17 17 0 0 1 0 18" />
                         </svg>
-                        <h3 class="heading heading--tertiary">conheça a natureza</h3>
-                        <p class="feature__description">
-                            Conecte-se com paisagens naturais e aproveite momentos inesquecíveis ao
-                            ar livre.
-                        </p>
+
+                        <div class="feature__content">
+                            <h3 class="heading heading--tertiary">conheça a natureza</h3>
+                            <p class="feature__description">
+                                Conecte-se com paisagens naturais e aproveite momentos inesquecíveis
+                                ao ar livre.
+                            </p>
+                        </div>
                     </article>
 
                     <article class="feature">
@@ -223,11 +229,14 @@
                             <path d="M9 4v13" />
                             <path d="M15 7v13" />
                         </svg>
-                        <h3 class="heading heading--tertiary">encontre o caminho</h3>
-                        <p class="feature__description">
-                            Explore trilhas, mapas e roteiros planejados para ajudar você a
-                            encontrar sua próxima aventura.
-                        </p>
+
+                        <div class="feature__content">
+                            <h3 class="heading heading--tertiary">encontre o caminho</h3>
+                            <p class="feature__description">
+                                Explore trilhas, mapas e roteiros planejados para ajudar você a
+                                encontrar sua próxima aventura.
+                            </p>
+                        </div>
                     </article>
 
                     <article class="feature">
@@ -248,11 +257,14 @@
                                 d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
                             />
                         </svg>
-                        <h3 class="heading heading--tertiary">viva com intensidade</h3>
-                        <p class="feature__description">
-                            Crie memórias especiais, conheça novas culturas e aproveite cada jornada
-                            ao máximo.
-                        </p>
+
+                        <div class="feature__content">
+                            <h3 class="heading heading--tertiary">viva com intensidade</h3>
+                            <p class="feature__description">
+                                Crie memórias especiais, conheça novas culturas e aproveite cada
+                                jornada ao máximo.
+                            </p>
+                        </div>
                     </article>
                 </div>
             </section>
@@ -364,7 +376,7 @@
                 </div>
 
                 <footer class="section__footer">
-                    <a href="#overlay" class="btn btn--pill btn--primary btn--effect-expand"
+                    <a href="#" class="btn btn--pill btn--primary btn--effect-expand"
                         >descubra todos os passeios</a
                     >
                 </footer>
@@ -396,11 +408,11 @@
                         </figure>
 
                         <div class="testimonial-card__content">
-                            <h3 class="testimonial-card__heading">
+                            <h3 class="testimonial-card__title">
                                 Passei a melhor semana de todas com a minha família
                             </h3>
 
-                            <blockquote>
+                            <blockquote class="testimonial-card__quote">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Voluptatibus maiores adipisci debitis magni molestiae doloremque
                                 iure, quo consectetur rem. Tempora quasi excepturi laudantium aut
@@ -416,11 +428,11 @@
                         </figure>
 
                         <div class="testimonial-card__content">
-                            <h3 class="testimonial-card__heading">
+                            <h3 class="testimonial-card__title">
                                 Uau! Minha vida é completamente diferente agora
                             </h3>
 
-                            <blockquote>
+                            <blockquote class="testimonial-card__quote">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Voluptatibus maiores adipisci debitis magni molestiae doloremque
                                 iure, quo consectetur rem. Tempora quasi excepturi laudantium aut
@@ -509,8 +521,8 @@
                 <img src="img/logo-green-2x.png" alt="logo completa" class="footer__logo" />
             </div>
 
-            <div class="footer-container">
-                <div class="footer__side">
+            <div class="footer__content">
+                <div class="footer__links">
                     <ul class="footer__navigation">
                         <li><a href="#" class="footer__link">empresa</a></li>
                         <li><a href="#" class="footer__link">contate-nos</a></li>
@@ -520,8 +532,8 @@
                     </ul>
                 </div>
 
-                <div class="footer__side">
-                    <p class="footer__copyright">
+                <div class="footer__copyright">
+                    <p>
                         Construído por
                         <a href="#" class="footer__link"> Jonas Schmedtmann</a> para seu curso
                         online

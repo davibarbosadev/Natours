@@ -1,7 +1,9 @@
+@use "../../abstracts/mixins";
 @use "../../tokens/colors";
 
 .section--features {
     margin-top: -9.6rem;
+    padding-top: 10rem;
 
     background-image:
         linear-gradient(
@@ -14,16 +16,27 @@
     background-position: top;
     transform: skewY(-7deg);
 
+    @include mixins.media-up(640px) {
+        padding-top: 12rem;
+    }
+
     & > * {
         transform: skewY(7deg);
     }
 }
 
 .features {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
     gap: 3.2rem;
 
-    & > * {
-        flex: 1;
+    @include mixins.media-up(768px) {
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    @include mixins.media-up(1024px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }

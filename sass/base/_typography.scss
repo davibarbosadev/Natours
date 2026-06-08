@@ -5,26 +5,33 @@
     text-transform: uppercase;
 
     &--primary {
-        font-size: 5.6rem;
-        letter-spacing: 0.8rem;
-        word-spacing: 1.6rem;
+        font-size: clamp(3.2rem, 2.365rem + 2.61vw, 5.6rem);
+        letter-spacing: clamp(0.4rem, 0.261rem + 0.43vw, 0.8rem);
+        word-spacing: clamp(0.8rem, 0.522rem + 0.87vw, 1.6rem);
         line-height: 1;
+
         color: colors.$color-text-light;
+
         animation: moveInLeft 1s ease;
     }
 
     &--secondary {
         display: inline-block;
-        font-size: 3.2rem;
+
+        font-size: clamp(2.4rem, 2.122rem + 0.87vw, 3.2rem);
         letter-spacing: 0.2rem;
-        color: transparent;
+
         background-image: linear-gradient(
             to right,
             colors.$color-brand-primary-light,
             colors.$color-brand-primary-dark
         );
+        color: transparent;
         background-clip: text;
-        transition: all 0.3s ease;
+
+        transition:
+            transform 0.3s ease,
+            text-shadow 0.3s ease;
 
         &:hover {
             transform: skewY(2deg) scale(1.1);
@@ -33,21 +40,23 @@
     }
 
     &--tertiary {
-        font-size: typography.$default-font-size;
         margin-bottom: 0.8rem;
+        font-size: clamp(1.4rem, 1.33rem + 0.22vw, 1.6rem);
     }
 
     &--subtitle {
-        font-size: 3.2rem;
         letter-spacing: 0.4rem;
-        word-spacing: 0.8rem;
+        font-size: clamp(1.4rem, 0.774rem + 1.96vw, 3.2rem);
+        word-spacing: clamp(0.4rem, 0.261rem + 0.43vw, 0.8rem);
+
         color: colors.$color-text-light;
+
         animation: moveInRight 1s ease;
     }
 }
 
 .paragraph {
-    font-size: typography.$small-font-size;
+    font-size: clamp(1.2rem, 1.13rem + 0.22vw, 1.4rem);
 
     &:not(:last-child) {
         margin-bottom: 3.2rem;

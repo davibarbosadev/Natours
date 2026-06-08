@@ -1,8 +1,21 @@
+@use "../abstracts/mixins";
+
 .testimonial-card {
     margin: 0 auto;
     padding: 3.2rem;
     background-color: #fff;
-    transform: skewX(-15deg);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include mixins.media-up(425px) {
+        display: block;
+    }
+
+    @include mixins.media-up(768px) {
+        transform: skewX(-15deg);
+    }
 
     &__profile {
         position: relative;
@@ -11,8 +24,11 @@
         float: left;
         clip-path: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
-        transform: skewX(15deg);
         margin-right: 3.2rem;
+
+        @include mixins.media-up(768px) {
+            transform: skewX(15deg);
+        }
 
         img {
             width: 100%;
@@ -20,9 +36,11 @@
             object-fit: cover;
             object-position: 50% 50%;
             transform: scale(1.2);
-            transition: filter, transform .7s ease;
+            transition:
+                filter,
+                transform 0.7s ease;
         }
-    } 
+    }
 
     &:hover img {
         transform: scale(1);
@@ -38,15 +56,28 @@
         color: #fff;
         text-align: center;
         text-transform: uppercase;
-        transition: opacity, transform .7s ease;
+        transition:
+            opacity,
+            transform 0.7s ease;
     }
-    
+
     &:hover &__name {
         opacity: 1;
         transform: translate(-50%, -50%);
     }
 
     &__content {
-        transform: skewX(15deg);
+        @include mixins.media-up(768px) {
+            transform: skewX(15deg);
+        }
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    &__quote {
+        font-size: 1.2rem;
     }
 }

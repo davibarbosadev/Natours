@@ -1,3 +1,4 @@
+@use "../abstracts/mixins";
 @use "../tokens/colors";
 @use "../tokens/typography";
 
@@ -11,10 +12,27 @@
 
     transition: transform 0.3s ease;
 
+    @include mixins.media-up(425px) {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        text-align: start;
+    }
+
+    @include mixins.media-up(768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        text-align: center;
+    }
+
     &__icon {
+        flex-shrink: 0;
+
         width: 4.8rem;
         height: 4.8rem;
-        margin-bottom: 0.8rem;
 
         stroke-width: 1;
         stroke: colors.$color-brand-primary;

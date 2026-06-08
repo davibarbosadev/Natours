@@ -1,6 +1,8 @@
+@use "../../abstracts/mixins";
+
 .section--testimonials {
     position: relative;
-    padding: 9.6rem 0;
+    padding-block: 9.6rem;
     background-color: transparent;
 }
 
@@ -15,8 +17,11 @@
 }
 
 .testimonials {
-    padding: 0 12.5%;
     display: flex;
     flex-direction: column;
     gap: 6.4rem;
+
+    @include mixins.media-up(768px) {
+        padding: 0 12.5%;
+    }
 }

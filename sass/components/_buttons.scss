@@ -9,7 +9,7 @@
 
     width: max-content;
 
-    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 1.061rem + 0.43vw, 1.6rem);
 
     transition:
         transform 0.4s ease,
@@ -27,6 +27,7 @@
 
     &--pill {
         padding: 1.6rem 3.2rem;
+        padding: 1.2rem 2.4rem;
 
         border-radius: 10rem;
         text-transform: uppercase;
@@ -47,7 +48,7 @@
         color: colors.$color-brand-primary;
         font-weight: 500;
         border-bottom: 2px solid colors.$color-brand-primary;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
 
         &:hover {
             color: #fff;
