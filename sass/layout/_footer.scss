@@ -12,12 +12,15 @@
     }
 
     &__logo-box {
-        text-align: center;
+        display: flex;
+        justify-content: center;
         margin-bottom: 4.8rem;
     }
 
     &__logo {
+        display: block;
         width: 15rem;
+        height: auto;
     }
 
     &__content {

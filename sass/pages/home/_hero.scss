@@ -16,12 +16,22 @@
             rgba(colors.$color-brand-primary-light, 0.8),
             rgba(colors.$color-brand-primary-dark, 0.8)
         ),
-        url(../img/hero.jpg);
+        url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 85dvh, 0 95dvh);
 
     overflow-x: hidden;
+
+    @media (min-resolution: 192dpi) and (min-width: 600px) {
+        background-image:
+            // linear-gradient(
+            //     120deg,
+            //     rgba(colors.$color-brand-primary-light, 0.8),
+            //     rgba(colors.$color-brand-primary-dark, 0.8)
+            // ),
+            url(../img/hero.jpg);
+    }
 
     @include mixins.media-up(360px) {
         gap: 12.8rem;
